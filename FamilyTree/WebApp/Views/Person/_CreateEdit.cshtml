@@ -1,0 +1,42 @@
+@model WebApp.ViewModels.PersonCreateEditViewModel
+
+<div asp-validation-summary="All" class="text-danger"></div>
+<div class="form-group">
+    <label asp-for="Person.FirstName" class="control-label"></label>
+    <input asp-for="Person.FirstName" class="form-control"/>
+    <span asp-validation-for="Person.FirstName" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="Person.LastName" class="control-label"></label>
+    <input asp-for="Person.LastName" class="form-control"/>
+    <span asp-validation-for="Person.LastName" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="Person.Age" class="control-label"></label>
+    <input asp-for="Person.Age" class="form-control"/>
+    <span asp-validation-for="Person.Age" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="Person.GenderId" class="control-label"></label>
+    <select asp-for="Person.GenderId" class="form-control" asp-items="Model.GendersSelectList"></select>
+</div>
+<div class="form-group">
+    <label asp-for="Person.CreatedBy" class="control-label"></label>
+    <input asp-for="Person.CreatedBy" class="form-control"/>
+    <span asp-validation-for="Person.CreatedBy" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="Person.CreatedAt" class="control-label"></label>
+    <input asp-for="Person.CreatedAt" class="form-control"/>
+    <span asp-validation-for="Person.CreatedAt" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="Person.ChangedBy" class="control-label"></label>
+    <input asp-for="Person.ChangedBy" class="form-control"/>
+    <span asp-validation-for="Person.ChangedBy" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="Person.ChangedAt" class="control-label"></label>
+    <input asp-for="Person.ChangedAt" class="form-control"/>
+    <span asp-validation-for="Person.ChangedAt" class="text-danger"></span>
+</div>

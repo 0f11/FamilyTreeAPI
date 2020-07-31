@@ -1,0 +1,36 @@
+@model WebApp.ViewModels.ContactCreateEditViewModel
+
+<div asp-validation-summary="All" class="text-danger"></div>
+<div class="form-group">
+    <label asp-for="Contact.ContactValue" class="control-label"></label>
+    <input asp-for="Contact.ContactValue" class="form-control"/>
+    <span asp-validation-for="Contact.ContactValue" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="Contact.ContactTypeId" class="control-label"></label>
+    <select asp-for="Contact.ContactTypeId" class="form-control" asp-items="Model.ContactTypesSelectList"></select>
+</div>
+<div class="form-group">
+    <label asp-for="Contact.PersonId" class="control-label"></label>
+    <select asp-for="Contact.PersonId" class="form-control" asp-items="Model.PersonsSelectList"></select>
+</div>
+<div class="form-group">
+    <label asp-for="Contact.CreatedBy" class="control-label"></label>
+    <input asp-for="Contact.CreatedBy" class="form-control"/>
+    <span asp-validation-for="Contact.CreatedBy" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="Contact.CreatedAt" class="control-label"></label>
+    <input asp-for="Contact.CreatedAt" class="form-control"/>
+    <span asp-validation-for="Contact.CreatedAt" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="Contact.ChangedBy" class="control-label"></label>
+    <input asp-for="Contact.ChangedBy" class="form-control"/>
+    <span asp-validation-for="Contact.ChangedBy" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="Contact.ChangedAt" class="control-label"></label>
+    <input asp-for="Contact.ChangedAt" class="form-control"/>
+    <span asp-validation-for="Contact.ChangedAt" class="text-danger"></span>
+</div>

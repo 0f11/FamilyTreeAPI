@@ -1,0 +1,71 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+    
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <UserSecretsId>aspnet-WebApp-6BF48652-F426-4F59-AE2D-7A549E9D7B97</UserSecretsId>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.1.1" />
+        <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.1" />
+        <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.0" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.1" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.2" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.1" />
+        <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.1" />
+        <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="3.1.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\DAL.App.EF\DAL.App.EF.csproj" />
+      <ProjectReference Include="..\Extensions\Extensions.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Views\Contact\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Contact\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Contact\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Contact\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Contact\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\ContactType\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\ContactType\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\ContactType\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\ContactType\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\ContactType\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Family\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Family\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Family\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Family\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Family\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Gender\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Gender\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Gender\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Gender\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Gender\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Person\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Person\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Person\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Person\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Person\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\RelationshipRoles\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\RelationshipRoles\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\RelationshipRoles\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\RelationshipRoles\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\RelationshipRoles\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Relationships\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Relationships\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Relationships\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Relationships\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Relationships\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\RelationshipTypes\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\RelationshipTypes\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\RelationshipTypes\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\RelationshipTypes\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\RelationshipTypes\Index.cshtml" />
+    </ItemGroup>
+
+</Project>
