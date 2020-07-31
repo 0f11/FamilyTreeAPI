@@ -1,1 +1,1 @@
-# FamilyTreeAPI
+# FamilyTreeAPI, ongoing project
